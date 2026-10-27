@@ -1,0 +1,10 @@
+{
+  "name": "transito-3d",
+  "version": "0.1.0",
+  "description": "Trânsito em mapa 3D real (OpenStreetMap) visto de cima, com simulação de tráfego e câmera planejada, em Blender. Kit pronto para o Claude reaproveitar em vez de gerar tudo de novo.",
+  "author": { "name": "paullabs" },
+  "homepage": "https://github.com/paullabs/transito-3d",
+  "repository": "https://github.com/paullabs/transito-3d",
+  "license": "MIT",
+  "keywords": ["blender", "traffic", "simulation", "openstreetmap", "animation", "3d"]
+}

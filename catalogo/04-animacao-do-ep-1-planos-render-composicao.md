@@ -1,0 +1,11 @@
+# Animação do ep. 1 (planos, render, composição)
+
+- `anim_ep1` — Trânsito Brasil 3D, ep. 1: RASCUNHO ANIMADO (meia resolução, com a voz; sem efeitos sonoros). Câmera PLANEJADA de cada plano (pré-passagem da simulação, filtrada), mesma … · anda(), monta_trafego(), slow(), Espaco, serie_esp(), interp(), onda(), loc_camera(), mede_planos(), liga_evento()…
+- `anim_ep1_planos` — Trânsito Brasil 3D, ep. 1: planos do RASCUNHO ANIMADO (python puro). Parte da decupagem aprovada (story_ep1_planos.PLANOS) e acrescenta:   - o plano 0: vista aérea da Pon… · plano_em()
+- `anim_ep1b` — Trânsito Brasil 3D, ep. 1, v2 (TUDO DE CIMA, 1080x1920 sem painel): RASCUNHO ANIMADO (meia resolução, com a voz; sem efeitos sonoros). Câmera PLANEJADA de cada plano (pré… · anda(), monta_trafego(), slow(), Espaco, serie_esp(), interp(), onda(), curva(), loc_camera(), mede_planos()…
+- `anim_ep1b_planos` — Trânsito Brasil 3D, ep. 1, rascunho v2 (26/10, depois de "tem que ser visto do alto, sem barra branca, takes demais, mais contraste"): TUDO VISTO DE CIMA (câmera ortográf… · plano_em()
+- `anim_ep1c` — Trânsito Brasil 3D, ep. 1, v2 (TUDO DE CIMA, 1080x1920 sem painel): RASCUNHO ANIMADO (meia resolução, com a voz; sem efeitos sonoros). Câmera PLANEJADA de cada plano (pré… · anda(), monta_trafego(), slow(), Espaco, serie_esp(), interp(), onda(), curva(), loc_camera(), mede_planos()…
+- `anim_ep1c_planos` — Trânsito Brasil 3D, ep. 1, rascunho v3 (27/10/2026), roteiro curto de 8 falas (~43 s), depois de "prolixo, repete, a parada tem que aparecer já": TUDO DE CIMA (câmera ort… · plano_em()
+- `compoe_ep1` — Trânsito Brasil 3D, ep. 1: compõe o rascunho (system python, PIL). Cada quadro: a cena (1080x1350 x escala) em cima e o painel embaixo (570 px x escala): legenda de cores… · alfa_pilula(), pilula(), palavra_em(), desenha_palavra()
+- `compoe_ep1b` — Trânsito Brasil 3D, ep. 1, v2: compõe o rascunho em TELA CHEIA (sem painel, sem legenda de cores): a cena de cima, as pílulas de texto no alto e a legenda UMA PALAVRA POR… · alfa_pilula(), pilula(), palavra_em(), palavra()
+- `compoe_ep1c` — Trânsito Brasil 3D, ep. 1, v2: compõe o rascunho em TELA CHEIA (sem painel, sem legenda de cores): a cena de cima, as pílulas de texto no alto e a legenda UMA PALAVRA POR… · alfa_pilula(), pilula(), palavra_em(), palavra()

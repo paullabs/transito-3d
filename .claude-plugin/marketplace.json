@@ -1,0 +1,12 @@
+{
+  "name": "transito-3d",
+  "owner": { "name": "paullabs" },
+  "metadata": { "description": "Animações de trânsito em mapa 3D real, no Blender, para o Claude Code." },
+  "plugins": [
+    {
+      "name": "transito-3d",
+      "source": "./",
+      "description": "Mapa 3D real, simulação de tráfego, câmera planejada e conferências, prontos para reaproveitar."
+    }
+  ]
+}

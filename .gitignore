@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.pyc
+render*/
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.aiff
+*.blend
+*.blend1
+.transito3d.env
