@@ -5,7 +5,13 @@ description: Animações de trânsito em mapa 3D real (OpenStreetMap) vistas de 
 
 # Trânsito 3D em mapa real
 
-A raiz do plugin é duas pastas acima desta skill: `kit/` (código), `CATALOGO.md` + `catalogo/` (índice), `dados/estaiada.json` (trecho da Marginal Pinheiros com a Ponte Estaiada, São Paulo), `memoria/` (regras e histórico). Se não achar: `find ~/.claude/plugins -name gera_catalogo.py` (a raiz é a pasta acima de `bin/`). No projeto do usuário, `.transito3d.env` guarda `TRANSITO3D_PROJETO` e `TRANSITO3D_KIT`.
+A raiz do plugin é duas pastas acima desta skill: `kit/` (código), `CATALOGO.md` + `catalogo/` (índice), `dados/estaiada.json` (trecho da Marginal Pinheiros com a Ponte Estaiada, São Paulo), `memoria/` (regras e histórico). Se não achar: `find ~/.claude/plugins ~/.codex/plugins -name gera_catalogo.py` (a raiz é a pasta acima de `bin/`). No projeto do usuário, `.transito3d.env` guarda `TRANSITO3D_PROJETO` e `TRANSITO3D_KIT`.
+
+**Antes de começar, o plugin está instalado para todas as pastas?** Se a pessoa instalou só para uma pasta, ele some quando ela abre o Claude Code em outra. Confira, sem instalar nada ainda:
+
+1. **Claude Code:** rode `claude plugin list --json` e procure o item `transito-3d@transito-3d`. Com `"scope": "user"` e `"enabled": true`, está **global**: siga. Só com `"scope": "project"` ou `"local"` (vem junto o `projectPath`): **não está global**; diga isso numa frase e ofereça `claude plugin install transito-3d@transito-3d --scope user`, que só roda com o sim da pessoa. Se não aparece, o plugin foi carregado de uma pasta avulsa: diga que **não está instalado** e mostre os comandos do `README.md`.
+2. **Codex:** rode `codex plugin list` e procure `transito-3d@transito-3d`: tem de dizer `installed, enabled`. Se não disser, ofereça `codex plugin add transito-3d@transito-3d`.
+3. Se o comando `claude` ou `codex` não existir, ignore aquele item.
 
 ## Reaproveite, não regere
 1. Leia `CATALOGO.md` (curto), abra só o arquivo do assunto em `catalogo/` e use `grep -n '^def \|^class ' kit/<modulo>.py` para as assinaturas. Não leia módulos inteiros nem cole código do kit na conversa: importe (`sys.path.insert(0, KIT); import tb_trafego as TT`).

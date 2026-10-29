@@ -21,6 +21,15 @@ No Claude Code:
 /plugin marketplace add paullabs/transito-3d
 /plugin install transito-3d@transito-3d
 ```
+Se o Claude perguntar o escopo, escolha o de usuário (`user`). Pelo terminal, o mesmo: `claude plugin marketplace add paullabs/transito-3d` e `claude plugin install transito-3d@transito-3d --scope user`.
+
+No Codex:
+```bash
+codex plugin marketplace add paullabs/transito-3d
+codex plugin add transito-3d@transito-3d
+```
+`--scope user` instala para todas as suas pastas (é o padrão do Claude Code). Para conferir, `claude plugin list` tem de mostrar `Scope: user` e `codex plugin list` tem de mostrar `installed, enabled`. Se o Claude mostrar `project` ou `local`, o plugin só vale naquela pasta: rode o `install` de novo com `--scope user`. Os comandos `/transito-3d:iniciar` e `/transito-3d:catalogo` são do Claude Code; no Codex peça as mesmas coisas em palavras.
+
 Depois, na pasta do SEU projeto:
 ```
 /transito-3d:iniciar
